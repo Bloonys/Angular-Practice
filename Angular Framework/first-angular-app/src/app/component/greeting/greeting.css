@@ -1,0 +1,7 @@
+header {
+    display: flex;
+    padding-inline: 16px;
+    background-color: rgb(247, 255, 159);
+    align-items: center;
+
+}

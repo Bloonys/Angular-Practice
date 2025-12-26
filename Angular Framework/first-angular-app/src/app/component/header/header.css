@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    padding-inline: 16px;
+    background-color: rgb(8, 66, 66);
+    align-items: center;
+    color: aliceblue;
+
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+        cursor: pointer;
+        &:hover {
+            color: aliceblue;
+        }
+    }
+    ul{
+        list-style: none;
+    }
+    li {
+        cursor: pointer;
+        &:hover {
+            color: aliceblue;
+        }
+    }
+}

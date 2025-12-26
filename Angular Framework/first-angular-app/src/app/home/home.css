@@ -1,0 +1,11 @@
+header {
+    display: flex;
+    padding-inline: 16px;
+    background-color: rgb(255, 174, 255);
+    align-items: center;
+
+}
+
+input {
+    margin-top: 10px;
+}
