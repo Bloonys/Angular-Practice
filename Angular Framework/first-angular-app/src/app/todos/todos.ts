@@ -3,6 +3,7 @@ import {TodosS} from '../services/todos'
 import {Todo} from '../interfaces/todo'
 import { catchError } from 'rxjs';
 import { TodoItem } from '../component/todo-item/todo-item';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-todos',
@@ -13,7 +14,9 @@ import { TodoItem } from '../component/todo-item/todo-item';
 export class Todos implements OnInit{
   todoService = inject(TodosS);
   todoItems = signal<Array<Todo>>([]);
+  searchTerm = signal('');
 
+  //写data的
   ngOnInit(): void {
     this.todoService.getTodosFromApi()
       .pipe(

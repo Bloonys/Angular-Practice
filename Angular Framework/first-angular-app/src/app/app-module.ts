@@ -11,6 +11,7 @@ import { Todos } from './todos/todos';
 import { TodoItem } from './component/todo-item/todo-item';
 import { provideHttpClient } from '@angular/common/http';
 import { HighlightCompletedTodo } from './directives/highlight-completed-todo';
+import { FilterTodosPipe } from './pipes/filter-todos-pipe';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { HighlightCompletedTodo } from './directives/highlight-completed-todo';
     Todos,
     TodoItem,
     HighlightCompletedTodo,
+    FilterTodosPipe,
 
   ],
   imports: [
