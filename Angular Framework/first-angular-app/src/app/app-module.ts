@@ -12,6 +12,7 @@ import { TodoItem } from './component/todo-item/todo-item';
 import { provideHttpClient } from '@angular/common/http';
 import { HighlightCompletedTodo } from './directives/highlight-completed-todo';
 import { FilterTodosPipe } from './pipes/filter-todos-pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { FilterTodosPipe } from './pipes/filter-todos-pipe';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [

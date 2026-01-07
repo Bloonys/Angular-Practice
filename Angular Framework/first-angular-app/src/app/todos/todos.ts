@@ -14,7 +14,7 @@ import { FormsModule } from '@angular/forms';
 export class Todos implements OnInit{
   todoService = inject(TodosS);
   todoItems = signal<Array<Todo>>([]);
-  searchTerm = signal('');
+  searchTerm: string = '';
 
   //写data的
   ngOnInit(): void {
